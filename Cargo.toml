@@ -1,0 +1,13 @@
+[package]
+name = "ratatui-type-and-scroll"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+crossterm = { version = "0.27", features = ["event-stream"] }
+ratatui = "0.25"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
