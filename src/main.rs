@@ -152,7 +152,7 @@ fn ui(frame: &mut Frame, state: &mut AppState) {
     frame.render_widget(
         Paragraph::new(render_lines)
             .block(Block::default().title("Greeting").borders(Borders::ALL)),
-        frame.size(),
+        frame.area(),
     );
-    frame.render_stateful_widget(Scrollbar::default(), frame.size(), &mut state.scroll_state);
+    frame.render_stateful_widget(Scrollbar::default(), frame.area(), &mut state.scroll_state);
 }
